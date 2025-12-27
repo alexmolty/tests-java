@@ -26,7 +26,7 @@ public class DemoAppl {
     }
 
     public static int maxValue(int[]arr){
-        if (arr.length == 0) return 0;
+        if (arr == null || arr.length == 0) return 0;
         int max = arr[0];
         for (int i : arr) {
             if (i > max) max = i;

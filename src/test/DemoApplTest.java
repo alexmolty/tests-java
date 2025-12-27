@@ -1,7 +1,6 @@
 package test;
 
 import demo.DemoAppl;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -57,11 +56,11 @@ class DemoApplTest {
         assertEquals(100, DemoAppl.maxValue(single));
         assertEquals(-10, DemoAppl.maxValue(negative));
         assertEquals(0, DemoAppl.maxValue(empty));
+        assertEquals(0, DemoAppl.maxValue(null));
     }
 
     @Test
     void maxValueNegativeCase(){
-        assertThrows(NullPointerException.class, ()-> DemoAppl.maxValue(null));
         assertNotEquals(100, DemoAppl.maxValue(numbers));
         assertNotEquals(1, DemoAppl.maxValue(single));
         assertNotEquals(0, DemoAppl.maxValue(negative));

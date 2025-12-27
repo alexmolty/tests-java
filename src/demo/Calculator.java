@@ -1,9 +1,6 @@
 package demo;
 
 public class Calculator {
-    static void main() {
-        System.out.println(sum(Double.MAX_VALUE,Double.MAX_VALUE));
-    }
     public static double sum(double x, double y) {
         return x + y;
     }
